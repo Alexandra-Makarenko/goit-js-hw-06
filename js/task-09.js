@@ -22,6 +22,7 @@ function getRandomHexColor() {
 }
 
 elButton.addEventListener("click", () => {
-  elBody.style.backgroundColor = getRandomHexColor();
-  elSpanColor.textContent = getRandomHexColor();
+  const randomColor = getRandomHexColor();
+  elBody.style.backgroundColor = randomColor;
+  elSpanColor.textContent = randomColor;
 });
